@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Lucida Sans';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  display:flex;
+  width:50%;
+  margin-left: 25%;
+  align-items: center;
+  flex-direction: column;
+  border:3px solid blue;
+  background-color:rgb(241, 41, 41);
+
+}
+.heading{
+  color:blanchedalmond;
+  text-align: center;
+  font-family:cursive;
+}
+code {
+  font-family:'Arial';
+}
+
+.app {
+  background: #209cee;
+  padding: 30px;
+  height: 100vh;
+  width:50%;
+}
+
+.todo-list{
+  background: olivedrab;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 400px;
+}
+
+.todo{
+  border: 2px solid black;
+  box-shadow: 3px 3px 3px rgba(0,0,0, 0.15);
+  padding: 3px 10px;
+  font-size: 24px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ .todo:nth-child(5n){
+  background:rgb(228, 240, 120);
+ }
+ .todo:nth-child(5n+1){
+  background:rgb(214, 182, 245);
+ }
+ .todo:nth-child(5n+2){
+  background:rgb(99, 143, 238);
+ }
+ .todo:nth-child(5n+3){
+  background:rgb(245, 184, 114);
+ }
+ .todo:nth-child(5n+4){
+  background:rgb(146, 240, 137);
+ }
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 1rem;
+  height: 2.25em;
+  font-size: 24px;
+}
+.deleteButton{
+  border-radius: 50%;
+  border:none;
+}
+.deleteButton:hover{
+  cursor: pointer;
+  color: red;
+}
